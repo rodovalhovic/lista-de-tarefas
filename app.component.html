@@ -1,0 +1,24 @@
+<section class="main">
+  <app-cadastrar-tarefa [itemQueVaiSerEditado]="itemParaSerEditado"></app-cadastrar-tarefa>
+
+  <div class="container">
+    <div class="lista">
+
+      <div class="header-lista">
+        <h3 class="titulo">Lista de tarefas</h3>
+      </div>
+
+      <div *ngIf="listaDeCompra.length !== 0; else naoTemItem">
+        <div *ngFor="let item of listaDeCompra">
+          <app-listar-tarefas [item]="item" (emitindoParaEditar)="editarItem($event)" (emitindoIdParaDeletar)="deletarItem($event)"></app-listar-tarefas>
+        </div>
+      </div>
+
+      <ng-template #naoTemItem>
+        <br>
+        <p>Não há itens na lista.</p>
+      </ng-template>
+
+    </div>
+  </div>
+</section>

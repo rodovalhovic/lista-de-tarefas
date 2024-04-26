@@ -1,0 +1,26 @@
+.lista-atividades{
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0.7rem;
+
+  .item {
+    font-size: .9rem;
+  }
+
+  .delete-icon {
+    padding-right: 0.8rem;
+    color: #4574E3;
+    font-size: .85rem;
+    cursor: pointer;
+  }
+
+  .edit-icon {
+    color: #4574E3;
+    font-size: .85rem;
+    cursor: pointer;
+  }
+}
+
+
