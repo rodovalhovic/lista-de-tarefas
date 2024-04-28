@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CadastrarTarefaComponent } from './components/cadastrar-tarefa/cadastrar-tarefa.component';
 import { ListarTarefasComponent } from './components/listar-tarefas/listar-tarefas.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

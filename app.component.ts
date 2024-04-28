@@ -5,7 +5,7 @@ import { ListaDeCompraService } from './service/lista-de-tarefas.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, DoCheck{
   title = 'app-lista-de-compras';

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnChanges, Output, EventEmitter } from '@angular/core';
 import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Item } from 'src/app/interface/item';
 
 @Component({
   selector: 'app-listar-tarefas',
