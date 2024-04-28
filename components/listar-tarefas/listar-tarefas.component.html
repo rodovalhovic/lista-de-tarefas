@@ -1,9 +1,31 @@
 <section class="lista-atividades">
-  <div class="atividade">
-    <p class="item">{{item.nome}}</p>
-  </div>
-  <div class="acoes" *ngIf="!item.atividade">
-    <fa-icon class="delete-icon" (click)="deletarItem()" [icon]="faTrash" ></fa-icon>
-    <fa-icon class="edit-icon" (click)="editarItem()" [icon]="faPen" ></fa-icon>
+
+  <app-cadastrar-tarefa></app-cadastrar-tarefa>
+
+  <div class="container">
+    <div class="lista">
+
+      <div class="header-lista">
+        <h3 class="titulo">Lista de tarefas</h3>
+      </div>
+
+      <div>
+        <div class="lista__itens">
+          <div class="atividade">
+            <p class="item">Lavar a louça</p>
+          </div>
+          <div class="acoes">
+            <fa-icon class="delete-icon" [icon]="faTrash" ></fa-icon>
+            <fa-icon class="edit-icon" [icon]="faPen" ></fa-icon>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #naoTemItem>
+        <br>
+        <p>Não há itens na lista.</p>
+      </ng-template>
+
+    </div>
   </div>
 </section>

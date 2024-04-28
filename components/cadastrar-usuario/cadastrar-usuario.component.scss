@@ -1,0 +1,60 @@
+.cadastro-usuarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+  max-width: 328px;
+  margin: 0 auto;
+  padding-top: 0.7rem;
+
+  header{
+    margin-bottom: 1.5rem;
+    .titulo{
+      font-family: 'Courgette', sans-serif;
+      font-size: 2.2rem;
+      margin-bottom: 0.4rem;
+      color: white;
+    }
+
+    .subtitulo{
+      font-family: 'PT-Sans', sans-serif;
+      font-size: .7rem;
+      font-weight: 500;
+    }
+  }
+
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input{
+      padding: .5rem;
+      width: 21rem;
+      border: none;
+      box-shadow: 2px 2px 2px #00000050;
+      margin-bottom: 0.8rem;
+      &::placeholder {
+        color: #8A8A8A;
+        font-size: .60rem;
+        text-align: center;
+      }
+    }
+
+    button {
+      background: #154580;
+      border: 1px solid #154580;
+      color: white;
+      font-size: .7rem;
+      padding: .4rem;
+      border-radius: 0.2rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      width: 10rem;
+    }
+
+    .aviso{
+      font-size: .6rem;
+    }
+  }
+}
