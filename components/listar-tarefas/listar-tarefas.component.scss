@@ -12,10 +12,17 @@
 
       &__itens{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 0.7rem;
+
+        .atividade{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 0.7rem;
+        }
       }
 
       .header-lista {
@@ -41,13 +48,13 @@
   .delete-icon {
     padding-right: 0.8rem;
     color: #4574E3;
-    font-size: .85rem;
+    font-size: .75rem;
     cursor: pointer;
   }
 
   .edit-icon {
     color: #4574E3;
-    font-size: .85rem;
+    font-size: .75rem;
     cursor: pointer;
   }
 }

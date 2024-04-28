@@ -11,6 +11,22 @@ export class ListarTarefasComponent implements OnInit {
   faPen = faPen;
   faTrash = faTrash;
 
+  listaTarefas = [
+    {
+      id: '1',
+      fazer: 'Tirar o lixo',
+    },
+    {
+      id: '2',
+      fazer: 'Lavar o quintal',
+    },
+    {
+      id: '3',
+      fazer: 'Varrer a cozinha',
+    },
+  ];
+
+
   constructor() { }
 
   ngOnInit(): void {
